@@ -4,6 +4,8 @@
 
 ### Português
 
+Podes conhecer um pouco mais desta versão na [Wiki](https://github.com/201flaviosilva/201flaviosilva.github.io/wiki/V1-Vanilla-Site)
+
 Neste website eu faço uma aprestação da minha vida profissional
 
  - A minha experiência profissional e uma biografia
@@ -11,6 +13,8 @@ Neste website eu faço uma aprestação da minha vida profissional
  - As minhas redes sociais
 
 ### English
+
+You can learn a little more about this version on the [Wiki](https://github.com/201flaviosilva/201flaviosilva.github.io/wiki/V1-Vanilla-Site)
 
 On this website I make a presentation of my professional life
 
