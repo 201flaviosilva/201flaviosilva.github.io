@@ -1,0 +1,38 @@
+name: Github Pages Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the `main` branch
+        uses: actions/checkout@v2
+        with:
+          ref: main
+          clean: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 20
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build # Output build files in `dist` folder
+        run: npm run build
+
+      # ------- gh-pages (deploy) --------
+      - name: Deploy in gh-pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: dist
