@@ -11,8 +11,8 @@ import Player from "../../Objects/Platform/Player";
 import Cactus from "../../Objects/Platform/Cactus";
 import CratePower from "../../Objects/Platform/CratePower";
 import Power from "../../Objects/Platform/Power";
-import Tiles from "../../Objects/Platform/Tiles";
 import SkyTiles from "../../Objects/Platform/SkyTiles";
+import Tiles from "../../Objects/Platform/Tiles";
 
 
 const SCENE_WIDTH = 7000;
