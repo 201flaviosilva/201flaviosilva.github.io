@@ -1,15 +1,14 @@
-// https://vitejs.dev/config/
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
 
-export default {
-	base: "./", // Define `base` because this deploys to user.github.io/repo-name/
-	server: {
-		port: 2001,
-		open: true,
-	},
-	build: {
-		// Do not inline images and assets to avoid the phaser error
-		// "Local data URIs are not supported"
-		assetsInlineLimit: 0
-	},
-
-}
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  base: "./",
+  server: {
+    port: 2001,
+  },
+  build: {
+    assetsInlineLimit: 0,
+  },
+});
