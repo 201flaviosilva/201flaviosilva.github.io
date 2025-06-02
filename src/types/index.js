@@ -4,8 +4,8 @@ export const PAGES = {
 };
 
 export const LANGUAGES = {
-  EN: "EN",
-  PT: "PT",
+  EN: "en",
+  PT: "pt",
 };
 
 export const THEMES = {

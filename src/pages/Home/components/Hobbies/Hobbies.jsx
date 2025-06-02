@@ -1,5 +1,10 @@
 import { Section } from "../../../../components";
+import { SECTIONS } from "../../Home";
 
 export default function Hobbies() {
-  return <Section title="Hobbies">Hobbies</Section>;
+  return (
+    <Section key={SECTIONS.HOBBIES.key} title="Hobbies">
+      Hobbies
+    </Section>
+  );
 }

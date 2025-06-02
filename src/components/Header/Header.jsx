@@ -7,16 +7,16 @@ import {
   GoSun,
 } from "react-icons/go";
 import { useAppStore } from "../../store/app.store";
-import { PAGES, THEMES } from "../../types";
+import { LANGUAGES, PAGES, THEMES } from "../../types";
 import { Icon } from "../index";
 
 export default function Header() {
-  const { language } = useAppStore((state) => state.language);
-  const { theme } = useAppStore((state) => state.theme);
+  const language = useAppStore((state) => state.language);
+  const theme = useAppStore((state) => state.theme);
 
-  const { setPage } = useAppStore((state) => state.setPage);
-  const { setLanguage } = useAppStore((state) => state.setLanguage);
-  const { setTheme } = useAppStore((state) => state.setTheme);
+  const setPage = useAppStore((state) => state.setPage);
+  const setLanguage = useAppStore((state) => state.setLanguage);
+  const setTheme = useAppStore((state) => state.setTheme);
 
   return (
     <header>
@@ -34,8 +34,8 @@ export default function Header() {
               value={language}
               onChange={(e) => setLanguage(e.target.value)}
             >
-              <option>English</option>
-              <option>Portuguese</option>
+              <option value={LANGUAGES.EN}>English</option>
+              <option value={LANGUAGES.PT}>Portuguese</option>
             </select>
           </label>
 

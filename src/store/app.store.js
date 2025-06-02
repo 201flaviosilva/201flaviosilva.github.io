@@ -8,7 +8,7 @@ export const appInitialState = {
   theme: THEMES.DARK,
 };
 
-export const useAppStore = create(
+export const useAppStore = create()(
   persist(
     (set) => ({
       ...appInitialState,
