@@ -8,19 +8,19 @@ import {
   School,
   Volunteering,
 } from "./components";
-import { Wrapper } from "./styles";
+import { Aside, Sections, Wrapper } from "./styles";
 
 export const SECTIONS = {
-  ABOUT_ME: { key: "HOME-ABOUT_ME", locale: "aboutMe" },
-  CAREER: { key: "HOME-CAREER", locale: "career" },
-  SCHOOL: { key: "HOME-SCHOOL", locale: "school" },
+  ABOUT_ME: { key: "HOME-ABOUT_ME", locale: "sections.aboutMe" },
+  CAREER: { key: "HOME-CAREER", locale: "sections.career" },
+  SCHOOL: { key: "HOME-SCHOOL", locale: "sections.school" },
   PERSONAL_PROJECTS: {
     key: "HOME-PERSONAL_PROJECTS",
-    locale: "personalProjects",
+    locale: "sections.personalProjects",
   },
-  VOLUNTEERING: { key: "HOME-VOLUNTEERING", locale: "volunteering" },
-  HOBBIES: { key: "HOME-HOBBIES", locale: "hobbies" },
-  FOLLOW_ME: { key: "HOME-FOLLOW_ME", locale: "followMe" },
+  VOLUNTEERING: { key: "HOME-VOLUNTEERING", locale: "sections.volunteering" },
+  HOBBIES: { key: "HOME-HOBBIES", locale: "sections.hobbies" },
+  FOLLOW_ME: { key: "HOME-FOLLOW_ME", locale: "sections.followMe" },
 };
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <Wrapper>
-      <aside>
+      <Aside>
         <ul>
           {Object.values(SECTIONS).map((section) => (
             <li key={section.key}>
@@ -38,15 +38,17 @@ export default function Home() {
             </li>
           ))}
         </ul>
-      </aside>
+      </Aside>
 
-      <AboutMe />
-      <Career />
-      <School />
-      <PersonalProjects />
-      <Volunteering />
-      <Hobbies />
-      <FollowMe />
+      <Sections>
+        <AboutMe />
+        <Career />
+        <School />
+        <PersonalProjects />
+        <Volunteering />
+        <Hobbies />
+        <FollowMe />
+      </Sections>
     </Wrapper>
   );
 }

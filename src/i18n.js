@@ -10,9 +10,11 @@ i18n
     resources: {
       en: {
         home: locales.pages.home.en,
+        components: locales.components.en,
       },
       pt: {
         home: locales.pages.home.pt,
+        components: locales.components.pt,
       },
     },
     fallbackLng: "en",
