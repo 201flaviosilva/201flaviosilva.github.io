@@ -4,4 +4,8 @@ export const locales = {
     Portuguese: "Portuguese",
     Spanish: "Spanish",
   },
+  Header: {
+    light: "Light",
+    dark: "Dark",
+  },
 };

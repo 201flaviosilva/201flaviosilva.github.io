@@ -1,0 +1,7 @@
+{
+  "i18n-ally.localesPaths": [
+    "src/locales",
+    "src/components/locales",
+    "src/pages/Home/locales"
+  ]
+}
