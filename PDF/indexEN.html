@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css-free-style@1.3.0/build/reset.min.css"
 		integrity="sha256-n81SgUrkQYk/j8F8crIAIXXYC+BvmW55MNdDamZPqJ0=" crossorigin="anonymous">
-	<link rel="stylesheet" href="./style.min.css">
+	<link rel="stylesheet" href="./style.css">
 	<title>Flávio Silva</title>
 </head>
 
@@ -21,8 +21,9 @@
 			<p class="tag-cv-container">
 				<span class="symbol">&lt</span><span class="heading">CV</span><span class="symbol">&gt</span>
 			</p>
-			<p class="name">Flávio Silva</p>
-			<p class="role">Front-End/Game Developer</p>
+			<div class="dog-tag">
+				<p class="name">Flávio Silva</p>
+			</div>
 		</header>
 
 		<main>
@@ -31,11 +32,10 @@
 					<h2 class="heading-container"><span class="symbol">.</span><span class="heading">Biography</span>
 					</h2>
 					<p>
-						I am a Front-End/Game Developer with strong dedication and organizational skills.
-						I have experience in various projects, which have contributed to increasing my
-						proactivity and teamwork abilities. Furthermore, I maintain a continuous focus
-						on improving my knowledge and skills through side projects and game development.
-						I am looking for new challenges to expand and consolidate my expertise.
+						Front-End Developer passionate about creating functional and engaging interfaces. I enjoy
+						exploring and testing new technologies, applying them in practical ways to continuously improve
+						project quality and performance.
+						I value teamwork and always look for new ways to optimize processes and enhance results.
 					</p>
 				</section>
 
@@ -46,11 +46,14 @@
 						</h2>
 						<p>
 						<ul>
-							<li>Web: <span class="symbol">201flaviosilva.github.io</span></li>
-							<li>GitHub: <span class="symbol">201flaviosilva</span></li>
-							<li>LinkedIn: <span class="symbol">Flávio Silva</span></li>
-							<li>Phone: <span class="symbol">+351 916 887 198</span></li>
-							<li>@: <span class="symbol">flavioandre_ls2001@hotmail.com</span></li>
+							<li>Github: <a href="https://github.com/201flaviosilva"><span
+										class="symbol">201flaviosilva</span></a></li>
+							<li>Web: <a href="https://201flaviosilva.github.io/"><span
+										class="symbol">201flaviosilva.github.io</span></a></li>
+							<li>Tel: <a href="tel:+351916887198"><span class="symbol">+351 916 887 198</span></a></li>
+							<li>@: <a href="mailto:flavioandre_ls2001@hotmail.com"><span
+										class="symbol">flavioandre_ls2001@hotmail.com</span></a>
+							</li>
 						</ul>
 						</p>
 					</section>
@@ -63,9 +66,10 @@
 							HTML<span class="symbol">;</span>
 							CSS/SCSS<span class="symbol">;</span>
 							Javascript/Typescript<span class="symbol">;</span>
-							React, Redux<span class="symbol">;</span>
-							Jest/RTL/Vitest<span class="symbol">;</span>
-							Canvas API, Phaser, PIXI<span class="symbol">;</span>
+							React, Zustand<span class="symbol">;</span>
+							Styled Components<span class="symbol">;</span>
+							Jest/RTL<span class="symbol">;</span>
+							Phaser, PIXI<span class="symbol">;</span>
 							Godot, Python<span class="symbol">;</span>
 							Git/Github<span class="symbol">;</span>
 							Portuguese<span class="symbol">;</span>
@@ -77,19 +81,53 @@
 
 			<section class="work-experience">
 				<h2 class="heading-container">
-					<span class="symbol">.</span><span class="heading">Professional Experience</span>
+					<span class="symbol">.</span><span class="heading">Work Experience</span>
 				</h2>
 				<ul>
-					<!-- Mindera / Mindera School -->
+					<!-- IT Sector -->
 					<li>
-						<p>
-							<span class="title">Mindera</span>
+						<p class="experience-title">
+							<span class="title">IT Sector</span>
+							-
+							<span class="role">Front-End</span>
+							-
+							<span class="time">2024/Present</span>
+						</p>
+						<ul class="description">
+							<li>
+								<p class="skills">
+									<span class="symbol-alternative">-</span>
+									TypeScript<span class="symbol">;</span>
+									React<span class="symbol">;</span>
+									Zustand<span class="symbol">;</span>
+									Figma<span class="symbol">;</span>
+									Micro Front Ends<span class="symbol">;</span>
+									Azure DevOps<span class="symbol">;</span>
+									Sprints<span class="symbol">;</span>
+								</p>
+							</li>
+							<li>
+								<span class="symbol-alternative">-</span>
+								<span>Development of an internal application in a micro Front-End system for Millennium
+									BCP</span><span class="symbol">;</span>
+								<span>Direct collaboration with back-end, UI/UX and client teams to ensure aligned and
+									consistent solutions</span><span class="symbol">;</span>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Mindera -->
+					<li>
+						<p class="experience-title">
+							<span class="symbol">&lt</span><span class="title">Mindera</span><span
+								class="symbol">&gt</span>
 							-
 							<span class="time">2020/2024</span>
 						</p>
 						<ul>
+							<!-- Mindera / Mindera School -->
 							<li>
-								<p>
+								<p class="experience-title">
 									<span class="title">Mindera School</span>
 									-
 									<span class="role">Teaching</span>
@@ -106,24 +144,22 @@
 											Javascript/Typescript<span class="symbol">;</span>
 											React<span class="symbol">;</span>
 											Git/Github<span class="symbol">;</span>
+											Figma<span class="symbol">;</span>
 										</p>
 									</li>
 
 									<li>
 										<span class="symbol-alternative">-</span>
 										<span>Taught web development technologies</span><span class="symbol">;</span>
-									</li>
-									<li>
-										<span class="symbol-alternative">-</span>
-										<span>Prepared students for the job market through practical
-											exercises</span><span class="symbol">;</span>
+										<span>Prepared students for the job market through practical exercises and
+											realistic projects</span><span class="symbol">;</span>
 									</li>
 								</ul>
 							</li>
 
 							<!-- Mindera / FarFetch / NGG -->
 							<li>
-								<p>
+								<p class="experience-title">
 									<span class="title">FarFetch/NGG</span>
 									-
 									<span class="role">Front-End</span>
@@ -146,20 +182,17 @@
 									</li>
 									<li>
 										<span class="symbol-alternative">-</span>
-										<span>Developed and maintained E-Commerce websites</span><span
+										<span>Development of 5 E-Commerce websites in monorepo</span><span
 											class="symbol">;</span>
-									</li>
-									<li>
-										<span class="symbol-alternative">-</span>
-										<span>Solved problems and implemented client-requested features</span><span
-											class="symbol">;</span>
+										<span>Problem solving and implementation of client-requested
+											features</span><span class="symbol">;</span>
 									</li>
 								</ul>
 							</li>
 
 							<!-- Mindera / VRAI / Heat -->
 							<li>
-								<p>
+								<p class="experience-title">
 									<span class="title">VRAI/Heat</span>
 									-
 									<span class="role">Front-End</span>
@@ -176,12 +209,13 @@
 											Recharts<span class="symbol">;</span>
 											Git/GitHub<span class="symbol">;</span>
 											Scrum<span class="symbol">;</span>
+											Figma<span class="symbol">;</span>
 										</p>
 									</li>
 
 									<li>
 										<span class="symbol-alternative">-</span>
-										<span>Maintenance and creation of features according to client
+										<span>Maintenance and feature development according to client
 											requirements</span><span class="symbol">;</span>
 									</li>
 								</ul>
@@ -189,7 +223,7 @@
 
 							<!-- Mindera / Mindera Gaming -->
 							<li>
-								<p>
+								<p class="experience-title">
 									<span class="title">Mindera Gaming</span>
 									-
 									<span class="role">Game Dev</span>
@@ -201,7 +235,8 @@
 										<p class="skills">
 											<span class="symbol-alternative">-</span>
 											Javascript<span class="symbol">;</span>
-											Phaser, PIXI, Three.js, Fabric<span class="symbol">;</span>
+											Phaser, PIXI, Threejs, Fabric<span class="symbol">;</span>
+											WebSocket<span class="symbol">;</span>
 											Git/Bitbucket<span class="symbol">;</span>
 											Scrum<span class="symbol">;</span>
 										</p>
@@ -209,22 +244,25 @@
 
 									<li>
 										<span class="symbol-alternative">-</span>
-										<span>Developed the interface and interactivity of browser games</span><span
-											class="symbol">;</span>
-									</li>
-									<li>
-										<span class="symbol-alternative">-</span>
-										<span>Created a visual editor for an internal Game Engine</span><span
-											class="symbol">;</span>
+										<span>Development of browser casino games with server
+											synchronization</span><span class="symbol">;</span>
+										<span>Creation of a visual editor for an internal Game
+											Engine</span><span class="symbol">;</span>
 									</li>
 								</ul>
 							</li>
 						</ul>
 					</li>
 
+					<p class="experience-title">
+						<span class="symbol">&lt/</span>
+						<span class="title">Mindera</span>
+						<span class="symbol">&gt</span>
+					</p>
+
 					<!-- PC Recover -->
 					<li>
-						<p>
+						<p class="experience-title">
 							<span class="title">PC Recover</span>
 							-
 							<span class="role">IT Technician</span>
@@ -233,14 +271,10 @@
 						</p>
 						<ul class="description">
 							<li>
-								<span class="symbol-alternative">-</span>
-								<span>Performed formatting, diagnostics, and repair of IT systems</span><span
-									class="symbol">;</span>
-							</li>
-							<li>
-								<span class="symbol-alternative">-</span>
-								<span>Customer service and resolution of technical issues</span><span
-									class="symbol">;</span>
+								<span>Performed formatting, diagnostics, and repair of IT
+									systems</span><span class="symbol">;</span>
+								<span>Customer service and resolution of technical
+									issues</span><span class="symbol">;</span>
 							</li>
 						</ul>
 					</li>
@@ -253,7 +287,7 @@
 				<ul>
 					<!-- Mindera School -->
 					<li>
-						<p>
+						<p class="experience-title">
 							<span class="title">Mindera School - Full Stack</span>
 							-
 							<span class="institution">Mindera</span>
@@ -276,16 +310,16 @@
 
 							<li>
 								<span class="symbol-alternative">-</span>
-								<span>Boosted my professional development as a full stack programmer</span><span
-									class="symbol">;</span>
+								<span>Boosted my professional development as a full stack
+									developer</span><span class="symbol">;</span>
 							</li>
 						</ul>
 					</li>
 
 					<!-- ESAG -->
 					<li>
-						<p>
-							<span class="title">Technical Management Informatics</span>
+						<p class="experience-title">
+							<span class="title">IT Management Technician</span>
 							-
 							<span class="institution">ESAG</span>
 							-
@@ -300,14 +334,14 @@
 									Pascal/Lazarus<span class="symbol">;</span>
 									Visual Basic<span class="symbol">;</span>
 									Python<span class="symbol">;</span>
-									General IT tools<span class="symbol">;</span>
+									General IT Tools<span class="symbol">;</span>
 								</p>
 							</li>
 
 							<li>
 								<span class="symbol-alternative">-</span>
-								<span>First contact with programming and business management</span><span
-									class="symbol">;</span>
+								<span>First contact with programming and business
+									management</span><span class="symbol">;</span>
 							</li>
 						</ul>
 
