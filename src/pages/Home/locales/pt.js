@@ -9,6 +9,7 @@ export const locales = {
     followMe: "Siga-me",
   },
   aboutMe: {
+    title: "Sobre mim",
     bio: `  Sou Front-End/Game developer, com uma forte dedicação e organização.
 						Possuo experiência em diversos projetos, os quais contribuíram para o aumento da minha
 						proatividade e habilidades

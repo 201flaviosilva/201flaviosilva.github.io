@@ -9,6 +9,7 @@ export const locales = {
     followMe: "Follow Me",
   },
   aboutMe: {
+    title: "About Me",
     bio: `
     I am a Front-End/Game Developer with strong dedication and organizational skills.
     I have experience in various projects, which have contributed to increasing my

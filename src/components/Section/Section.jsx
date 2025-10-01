@@ -1,12 +1,14 @@
-export default function Section({ title, children }) {
+import { Wrapper } from "./styles";
+
+export default function Section({ className, title, children }) {
   return (
-    <section id={title.replace(/\s+/g, "-").toLowerCase()}>
+    <Wrapper id={title.replace(/\s+/g, "-").toLowerCase()}>
       {title && (
         <div>
           <h2>{title}</h2>
         </div>
       )}
-      <div>{children}</div>
-    </section>
+      <div className={className}>{children}</div>
+    </Wrapper>
   );
 }

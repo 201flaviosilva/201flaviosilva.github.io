@@ -1,17 +1,23 @@
 import styled from "styled-components";
 
-const SIZE_STYLES = {
+export const SIZES = {
+  small: "small",
+  medium: "medium",
+  large: "large",
+};
+
+export const SIZE_STYLES = {
   small: {
     padding: "2px 4px",
-    fontSize: "0.75rem",
+    fontSize: 12,
   },
   medium: {
     padding: "4px 8px",
-    fontSize: "0.875rem",
+    fontSize: 16,
   },
   large: {
     padding: "8px 16px",
-    fontSize: "1rem",
+    fontSize: 20,
   },
 };
 
@@ -34,10 +40,21 @@ export const List = styled.ul`
 export const Item = styled.li`
   ${({ size }) => `
     padding: ${SIZE_STYLES[size]?.padding};
-    font-size: ${SIZE_STYLES[size]?.fontSize};
+    span {
+        font-size: ${SIZE_STYLES[size]?.fontSize}px;
+      }
   `}
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
   border-radius: 4px;
-  color: ${({ color }) => color};
   background-color: ${({ bg }) => bg};
   box-shadow: ${({ shadow }) => shadow};
+
+  span {
+    color: ${({ color }) => color};
+  }
 `;

@@ -13,7 +13,7 @@ import { LANGUAGES, PAGES, THEMES } from "../../types";
 import { Icon } from "../index";
 import { Configuration, Head, LinkButton, Navigation, Wrapper } from "./styles";
 
-const translation = {
+const local = {
   light: "Header.light",
   dark: "Header.dark",
 };
@@ -54,13 +54,11 @@ export default function Header() {
             onClick={() => setTheme(isLightTheme ? THEMES.DARK : THEMES.LIGHT)}
           >
             <Icon IconComponent={isLightTheme ? GoSun : GoMoon} size={16} />
-            <span>
-              {t(isLightTheme ? translation.light : translation.dark)}
-            </span>
+            <span>{t(isLightTheme ? local.light : local.dark)}</span>
           </button>
 
           <LinkButton href="https://github.com/201flaviosilva" target="_blank">
-            <Icon IconComponent={GoDownload} />
+            <Icon IconComponent={GoDownload} size={16} />
             <span>PDF</span>
           </LinkButton>
         </Configuration>

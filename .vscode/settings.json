@@ -3,5 +3,6 @@
     "src/locales",
     "src/components/locales",
     "src/pages/Home/locales"
-  ]
+  ],
+  "cSpell.words": ["Mindera"]
 }
