@@ -11,7 +11,9 @@ $space-xxxs: 2px;
 $space-xxs: 4px;
 $space-xs: 8px;
 $space-s: 12px;
+$space-sm: 20px;
 $space-m: 16px;
+$space-ml: 20px;
 $space-l: 24px;
 $space-xl: 32px;
 $space-xxl: 64px;
@@ -50,8 +52,10 @@ body {
     flex-direction: column;
     // gap: $space-s;
     position: relative;
-    width: 794px; // width of a page (A4)
-    height: 1123px; // height of a page (A4)
+    // width: 794px; // width of a page (A4)
+    // height: 1123px; // height of a page (A4)
+    width: 210mm; // width of a page (A4)
+    height: 297mm; // height of a page (A4)
     background-color: $background-color;
 
     .heading {
@@ -79,15 +83,22 @@ body {
     header,
     footer {
       p.tag-cv-container * {
-        font-size: 50px;
+        font-size: 48px;
       }
     }
 
     header {
-      p {
-        &.name {
+      div.dog-tag {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        p {
           font-size: $space-l;
-          color: $txt-secondary-color;
+
+          &.name {
+            color: $txt-secondary-color;
+          }
         }
       }
     }
@@ -96,7 +107,7 @@ body {
       flex: 1;
 
       h2.heading-container * {
-        font-size: $space-xl;
+        font-size: $space-l;
       }
 
       div.columns {
@@ -112,18 +123,22 @@ body {
 
       section.work-experience,
       section.education {
+        p.experience-title * {
+          font-size: $space-ml;
+        }
+
+        span.title,
+        p.title {
+          color: $txt-secondary-color;
+        }
+
+        span.role,
+        span.time,
+        span.institution {
+          color: $txt-heading-color;
+        }
+
         li {
-          span.title,
-          p.title {
-            font-size: $space-l;
-            color: $txt-secondary-color;
-          }
-          span.role,
-          span.time,
-          span.institution {
-            color: $txt-heading-color;
-            font-size: $space-l;
-          }
           ul {
             margin-left: $space-m;
             li {
