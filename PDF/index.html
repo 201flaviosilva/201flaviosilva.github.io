@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css-free-style@1.3.0/build/reset.min.css"
 		integrity="sha256-n81SgUrkQYk/j8F8crIAIXXYC+BvmW55MNdDamZPqJ0=" crossorigin="anonymous">
-	<link rel="stylesheet" href="./style.min.css">
+	<link rel="stylesheet" href="./style.css">
 	<title>Flávio Silva</title>
 </head>
 
@@ -21,8 +21,9 @@
 			<p class="tag-cv-container">
 				<span class="symbol">&lt</span><span class="heading">CV</span><span class="symbol">&gt</span>
 			</p>
-			<p class="name">Flávio Silva</p>
-			<p class="role">Front-End/Game Developer</p>
+			<div class="dog-tag">
+				<p class="name">Flávio Silva</p>
+			</div>
 		</header>
 
 		<main>
@@ -31,13 +32,12 @@
 					<h2 class="heading-container"><span class="symbol">.</span><span class="heading">Biografia</span>
 					</h2>
 					<p>
-						Sou Front-End/Game developer, com uma forte dedicação e organização.
-						Possuo experiência em diversos projetos, os quais contribuíram para o aumento da minha
-						proatividade e habilidades
-						de trabalho em equipa. Além disso, mantenho um foco contínuo em melhorar os meus conhecimentos e
-						competências, através
-						de projetos paralelos e a criação de jogos. Estou à procura de novos desafios para
-						expandir e consolidar os meus conhecimentos.
+						Desenvolvedor Front-End apaixonado por criar interfaces funcionais e envolventes. Gosto de
+						explorar e testar novas
+						tecnologias, aplicando-as de forma prática para melhorar continuamente a qualidade e a
+						performance dos projetos.
+						Valorizo o trabalho em equipa e procuro sempre novas formas de otimizar processos e elevar os
+						resultados.
 					</p>
 				</section>
 
@@ -48,11 +48,12 @@
 						</h2>
 						<p>
 						<ul>
-							<li>Web: <span class="symbol">201flaviosilva.github.io</span></li>
 							<li>Github: <a href="https://github.com/201flaviosilva"><span
 										class="symbol">201flaviosilva</span></a></li>
 							<li>Linkedin: <a href="https://www.linkedin.com/in/fl%C3%A1vio-silva-2b069b146/"><span
 										class="symbol">Flávio Silva</span></a></li>
+							<li>Web: <a href="https://201flaviosilva.github.io/"><span
+										class="symbol">201flaviosilva.github.io</span></a></li>
 							<li>Tel: <a href="tel:+351916887198"><span class="symbol">+351 916 887 198</span></a></li>
 							<li>@: <a href="mailto:flavioandre_ls2001@hotmail.com"><span
 										class="symbol">flavioandre_ls2001@hotmail.com</span></a></li>
@@ -68,9 +69,10 @@
 							HTML<span class="symbol">;</span>
 							CSS/SCSS<span class="symbol">;</span>
 							Javascript/Typescript<span class="symbol">;</span>
-							React, Redux<span class="symbol">;</span>
+							React, Zustand<span class="symbol">;</span>
+							Styled Components<span class="symbol">;</span>
 							Jest/RTL/Vitest<span class="symbol">;</span>
-							Canvas API, Phaser, PIXI<span class="symbol">;</span>
+							Phaser, PIXI<span class="symbol">;</span>
 							Godot, Python<span class="symbol">;</span>
 							Git/Github<span class="symbol">;</span>
 							Português<span class="symbol">;</span>
@@ -85,16 +87,51 @@
 					<span class="symbol">.</span><span class="heading">Experiência Profissional</span>
 				</h2>
 				<ul>
-					<!-- Mindera / Mindera School -->
+					<!-- IT Sector -->
 					<li>
-						<p>
-							<span class="title">Mindera</span>
+						<p class="experience-title">
+							<span class="title">IT Sector</span>
+							-
+							<span class="role">Front-End</span>
+							-
+							<span class="time">2024/Presente</span>
+						</p>
+						<ul class="description">
+							<li>
+								<p class="skills">
+									<span class="symbol-alternative">-</span>
+									TypeScript<span class="symbol">;</span>
+									React<span class="symbol">;</span>
+									Zustand<span class="symbol">;</span>
+									Figma<span class="symbol">;</span>
+									Micro Frond Ends<span class="symbol">;</span>
+									Azure DevOps<span class="symbol">;</span>
+									Scrum<span class="symbol">;</span>
+								</p>
+							</li>
+							<li>
+								<span class="symbol-alternative">-</span>
+								<span>Desenvolvimento de uma aplicação interna em sistema de micro Front-Ends para o
+									Millennium BCP</span><span class="symbol">;</span>
+								<span>Colaboração direta com as equipas de back-end, UI/UX e cliente para garantir
+									soluções alinhadas e consistentes</span><span class="symbol">;</span>
+
+							</li>
+						</ul>
+					</li>
+
+					<!-- Mindera -->
+					<li>
+						<p class="experience-title">
+							<span class="symbol">&lt</span><span class="title">Mindera</span><span
+								class="symbol">&gt</span>
 							-
 							<span class="time">2020/2024</span>
 						</p>
 						<ul>
+							<!-- Mindera / Mindera School -->
 							<li>
-								<p>
+								<p class="experience-title">
 									<span class="title">Mindera School</span>
 									-
 									<span class="role">Ensino</span>
@@ -111,6 +148,7 @@
 											Javascript/Typescript<span class="symbol">;</span>
 											React<span class="symbol">;</span>
 											Git/Github<span class="symbol">;</span>
+											Figma<span class="symbol">;</span>
 										</p>
 									</li>
 
@@ -118,18 +156,15 @@
 										<span class="symbol-alternative">-</span>
 										<span>Ensinei tecnologias de desenvolvimento web</span><span
 											class="symbol">;</span>
-									</li>
-									<li>
-										<span class="symbol-alternative">-</span>
 										<span>Preparei alunos para o mercado de trabalho através de exercícios
-											práticos</span><span class="symbol">;</span>
+											práticos e projetos realistas</span><span class="symbol">;</span>
 									</li>
 								</ul>
 							</li>
 
 							<!-- Mindera / FarFetch / NGG -->
 							<li>
-								<p>
+								<p class="experience-title">
 									<span class="title">FarFetch/NGG</span>
 									-
 									<span class="role">Front-End</span>
@@ -152,12 +187,9 @@
 									</li>
 									<li>
 										<span class="symbol-alternative">-</span>
-										<span>Desenvolvi e manutenção de websites de E-Commerce</span><span
-											class="symbol">;</span>
-									</li>
-									<li>
-										<span class="symbol-alternative">-</span>
-										<span>Resolvi problemas e implementei funcionalidades solicitadas pelo
+										<span>Desenvolvimento de 5 websites em monorepo de
+											E-Commerce</span><span class="symbol">;</span>
+										<span>Resolução de problemas e implementação funcionalidades solicitadas pelo
 											cliente</span><span class="symbol">;</span>
 									</li>
 								</ul>
@@ -165,7 +197,7 @@
 
 							<!-- Mindera / VRAI / Heat -->
 							<li>
-								<p>
+								<p class="experience-title">
 									<span class="title">VRAI/Heat</span>
 									-
 									<span class="role">Front-End</span>
@@ -182,6 +214,7 @@
 											Recharts<span class="symbol">;</span>
 											Git/GitHub<span class="symbol">;</span>
 											Scrum<span class="symbol">;</span>
+											Figma<span class="symbol">;</span>
 										</p>
 									</li>
 
@@ -195,7 +228,7 @@
 
 							<!-- Mindera / Mindera Gaming -->
 							<li>
-								<p>
+								<p class="experience-title">
 									<span class="title">Mindera Gaming</span>
 									-
 									<span class="role">Game Dev</span>
@@ -207,7 +240,8 @@
 										<p class="skills">
 											<span class="symbol-alternative">-</span>
 											Javascript<span class="symbol">;</span>
-											Phaser, PIXI, Three.js, Fabric<span class="symbol">;</span>
+											Phaser, PIXI, Threejs, Fabric<span class="symbol">;</span>
+											WebSocket<span class="symbol">;</span>
 											Git/Bitbucket<span class="symbol">;</span>
 											Scrum<span class="symbol">;</span>
 										</p>
@@ -215,12 +249,9 @@
 
 									<li>
 										<span class="symbol-alternative">-</span>
-										<span>Desenvolvi a interface e interatividade de jogos de navegador</span><span
-											class="symbol">;</span>
-									</li>
-									<li>
-										<span class="symbol-alternative">-</span>
-										<span>Criei um editor visual para uma Game Engine interna</span><span
+										<span>Desenvolvimento de jogos de casino de navegador com sincronização com o
+											servidor</span><span class="symbol">;</span>
+										<span>Criação de um editor visual para uma Game Engine interna</span><span
 											class="symbol">;</span>
 									</li>
 								</ul>
@@ -228,9 +259,15 @@
 						</ul>
 					</li>
 
+					<p class="experience-title">
+						<span class="symbol">&lt/</span>
+						<span class="title">Mindera</span>
+						<span class="symbol">&gt</span>
+					</p>
+
 					<!-- PC Recover -->
 					<li>
-						<p>
+						<p class="experience-title">
 							<span class="title">PC Recover</span>
 							-
 							<span class="role">Técnico Informático</span>
@@ -239,12 +276,8 @@
 						</p>
 						<ul class="description">
 							<li>
-								<span class="symbol-alternative">-</span>
-								<span>Realizei formatação, diagnóstico e reparação de sistemas informáticos</span><span
-									class="symbol">;</span>
-							</li>
-							<li>
-								<span class="symbol-alternative">-</span>
+								<span>Realização de formatação, diagnóstico e reparação de sistemas
+									informáticos</span><span class="symbol">;</span>
 								<span>Atendimento ao cliente e resolução de problemas técnicos</span><span
 									class="symbol">;</span>
 							</li>
@@ -259,7 +292,7 @@
 				<ul>
 					<!-- Mindera School -->
 					<li>
-						<p>
+						<p class="experience-title">
 							<span class="title">Mindera School - Full Stack</span>
 							-
 							<span class="institution">Mindera</span>
@@ -290,7 +323,7 @@
 
 					<!-- ESAG -->
 					<li>
-						<p>
+						<p class="experience-title">
 							<span class="title">Técnico de Informática de Gestão</span>
 							-
 							<span class="institution">ESAG</span>
@@ -312,8 +345,8 @@
 
 							<li>
 								<span class="symbol-alternative">-</span>
-								<span>Iniciei o meu contacto com a programação e a gestão de
-									empresas</span><span class="symbol">;</span>
+								<span>Inicio do contacto com a programação e a gestão de empresas</span><span
+									class="symbol">;</span>
 							</li>
 						</ul>
 
