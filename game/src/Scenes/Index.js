@@ -40,12 +40,12 @@ export default class Index extends Phaser.Scene {
 		});
 
 		// PDF
-		this.createText({
-			x: middleWidth,
-			y: middleHeight + margin,
-			text: "PDF",
-			action: () => this.openPDF(),
-		});
+		// this.createText({
+		// 	x: middleWidth,
+		// 	y: middleHeight + margin,
+		// 	text: "PDF",
+		// 	action: () => this.openPDF(),
+		// });
 	}
 
 	openPDF() {
