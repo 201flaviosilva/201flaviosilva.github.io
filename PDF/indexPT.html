@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
 	<meta charset="UTF-8">
@@ -7,11 +7,29 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/css-free-style@1.3.0/build/reset.min.css"
 		integrity="sha256-n81SgUrkQYk/j8F8crIAIXXYC+BvmW55MNdDamZPqJ0=" crossorigin="anonymous">
 	<link rel="stylesheet" href="./style.css">
+	<script src="./script.js" defer></script>
 	<title>Flávio Silva</title>
 </head>
 
 <body>
-	<a href="./index.html" class="language-switch">Português</a>
+	<a href="./index.html" class="language-switch">English</a>
+	<button id="open-modal-btn" title="Abrir opções de download">&#128187;</button>
+
+	<div id="modal">
+		<div class="modal-container">
+			<button id="close-modal-btn">&#10060;</button>
+
+			<h3>🌐 Ligações Profissionais</h3>
+			<a href="./_/game" target="_blank">🎮 Jogar CV Interativo</a>
+			<a href="https://github.com/201flaviosilva" target="_blank">🐙 GitHub</a>
+			<a href="https://gitlab.com/201flaviosilva" target="_blank">🦊 GitLab</a>
+			<a href="https://www.linkedin.com/in/fl%C3%A1vio-silva-2b069b146/" target="_blank">💼 Linkedin</a>
+
+			<h3>📄 Transferir Curriculum Vitae</h3>
+			<a href="#" download>💾 CV em Portugues</a>
+			<a href="#" download>💾 English CV</a>
+		</div>
+	</div>
 	<!--  -->
 
 	<div class="container">
@@ -29,31 +47,34 @@
 		<main>
 			<div class="columns">
 				<section class="about-me">
-					<h2 class="heading-container"><span class="symbol">.</span><span class="heading">Biography</span>
+					<h2 class="heading-container"><span class="symbol">.</span><span class="heading">Biografia</span>
 					</h2>
 					<p>
-						Front-End Developer passionate about creating functional and engaging interfaces. I enjoy
-						exploring and testing new technologies, applying them in practical ways to continuously improve
-						project quality and performance.
-						I value teamwork and always look for new ways to optimize processes and enhance results.
+						Desenvolvedor Front-End apaixonado por criar interfaces funcionais e envolventes. Gosto de
+						explorar e testar novas
+						tecnologias, aplicando-as de forma prática para melhorar continuamente a qualidade e a
+						performance dos projetos.
+						Valorizo o trabalho em equipa e procuro sempre novas formas de otimizar processos e elevar os
+						resultados.
 					</p>
 				</section>
 
 				<div class="social-skills">
 					<section class="social">
 						<h2 class="heading-container">
-							<span class="symbol">.</span><span class="heading">Contacts</span>
+							<span class="symbol">.</span><span class="heading">Contactos</span>
 						</h2>
 						<p>
 						<ul>
 							<li>Github: <a href="https://github.com/201flaviosilva"><span
 										class="symbol">201flaviosilva</span></a></li>
+							<li>Linkedin: <a href="https://www.linkedin.com/in/fl%C3%A1vio-silva-2b069b146/"><span
+										class="symbol">Flávio Silva</span></a></li>
 							<li>Web: <a href="https://201flaviosilva.github.io/"><span
 										class="symbol">201flaviosilva.github.io</span></a></li>
 							<li>Tel: <a href="tel:+351916887198"><span class="symbol">+351 916 887 198</span></a></li>
 							<li>@: <a href="mailto:flavioandre_ls2001@hotmail.com"><span
-										class="symbol">flavioandre_ls2001@hotmail.com</span></a>
-							</li>
+										class="symbol">flavioandre_ls2001@hotmail.com</span></a></li>
 						</ul>
 						</p>
 					</section>
@@ -68,12 +89,12 @@
 							Javascript/Typescript<span class="symbol">;</span>
 							React, Zustand<span class="symbol">;</span>
 							Styled Components<span class="symbol">;</span>
-							Jest/RTL<span class="symbol">;</span>
+							Jest/RTL/Vitest<span class="symbol">;</span>
 							Phaser, PIXI<span class="symbol">;</span>
 							Godot, Python<span class="symbol">;</span>
 							Git/Github<span class="symbol">;</span>
-							Portuguese<span class="symbol">;</span>
-							English<span class="symbol">;</span>
+							Português<span class="symbol">;</span>
+							Inglês<span class="symbol">;</span>
 						</p>
 					</section>
 				</div>
@@ -81,7 +102,7 @@
 
 			<section class="work-experience">
 				<h2 class="heading-container">
-					<span class="symbol">.</span><span class="heading">Work Experience</span>
+					<span class="symbol">.</span><span class="heading">Experiência Profissional</span>
 				</h2>
 				<ul>
 					<!-- IT Sector -->
@@ -91,7 +112,7 @@
 							-
 							<span class="role">Front-End</span>
 							-
-							<span class="time">2024/Present</span>
+							<span class="time">2024/Presente</span>
 						</p>
 						<ul class="description">
 							<li>
@@ -101,17 +122,18 @@
 									React<span class="symbol">;</span>
 									Zustand<span class="symbol">;</span>
 									Figma<span class="symbol">;</span>
-									Micro Front Ends<span class="symbol">;</span>
+									Micro Frond Ends<span class="symbol">;</span>
 									Azure DevOps<span class="symbol">;</span>
 									Scrum<span class="symbol">;</span>
 								</p>
 							</li>
 							<li>
 								<span class="symbol-alternative">-</span>
-								<span>Development of an internal application in a micro Front-End system for Millennium
-									BCP</span><span class="symbol">;</span>
-								<span>Direct collaboration with back-end, UI/UX and client teams to ensure aligned and
-									consistent solutions</span><span class="symbol">;</span>
+								<span>Desenvolvimento de uma aplicação interna em sistema de micro Front-Ends para o
+									Millennium BCP</span><span class="symbol">;</span>
+								<span>Colaboração direta com as equipas de back-end, UI/UX e cliente para garantir
+									soluções alinhadas e consistentes</span><span class="symbol">;</span>
+
 							</li>
 						</ul>
 					</li>
@@ -130,7 +152,7 @@
 								<p class="experience-title">
 									<span class="title">Mindera School</span>
 									-
-									<span class="role">Teaching</span>
+									<span class="role">Ensino</span>
 									-
 									<span class="time">2022/2024</span>
 								</p>
@@ -150,9 +172,10 @@
 
 									<li>
 										<span class="symbol-alternative">-</span>
-										<span>Taught web development technologies</span><span class="symbol">;</span>
-										<span>Prepared students for the job market through practical exercises and
-											realistic projects</span><span class="symbol">;</span>
+										<span>Ensinei tecnologias de desenvolvimento web</span><span
+											class="symbol">;</span>
+										<span>Preparei alunos para o mercado de trabalho através de exercícios
+											práticos e projetos realistas</span><span class="symbol">;</span>
 									</li>
 								</ul>
 							</li>
@@ -182,10 +205,10 @@
 									</li>
 									<li>
 										<span class="symbol-alternative">-</span>
-										<span>Development of 5 E-Commerce websites in monorepo</span><span
-											class="symbol">;</span>
-										<span>Problem solving and implementation of client-requested
-											features</span><span class="symbol">;</span>
+										<span>Desenvolvimento de 5 websites em monorepo de
+											E-Commerce</span><span class="symbol">;</span>
+										<span>Resolução de problemas e implementação funcionalidades solicitadas pelo
+											cliente</span><span class="symbol">;</span>
 									</li>
 								</ul>
 							</li>
@@ -215,8 +238,8 @@
 
 									<li>
 										<span class="symbol-alternative">-</span>
-										<span>Maintenance and feature development according to client
-											requirements</span><span class="symbol">;</span>
+										<span>Manutenção e criação de funcionalidades segundo as exigencias do
+											cliente</span><span class="symbol">;</span>
 									</li>
 								</ul>
 							</li>
@@ -244,10 +267,10 @@
 
 									<li>
 										<span class="symbol-alternative">-</span>
-										<span>Development of browser casino games with server
-											synchronization</span><span class="symbol">;</span>
-										<span>Creation of a visual editor for an internal Game
-											Engine</span><span class="symbol">;</span>
+										<span>Desenvolvimento de jogos de casino de navegador com sincronização com o
+											servidor</span><span class="symbol">;</span>
+										<span>Criação de um editor visual para uma Game Engine interna</span><span
+											class="symbol">;</span>
 									</li>
 								</ul>
 							</li>
@@ -265,16 +288,16 @@
 						<p class="experience-title">
 							<span class="title">PC Recover</span>
 							-
-							<span class="role">IT Technician</span>
+							<span class="role">Técnico Informático</span>
 							-
-							<span class="time">400 Hours</span>
+							<span class="time">400 Horas</span>
 						</p>
 						<ul class="description">
 							<li>
-								<span>Performed formatting, diagnostics, and repair of IT
-									systems</span><span class="symbol">;</span>
-								<span>Customer service and resolution of technical
-									issues</span><span class="symbol">;</span>
+								<span>Realização de formatação, diagnóstico e reparação de sistemas
+									informáticos</span><span class="symbol">;</span>
+								<span>Atendimento ao cliente e resolução de problemas técnicos</span><span
+									class="symbol">;</span>
 							</li>
 						</ul>
 					</li>
@@ -282,7 +305,7 @@
 			</section>
 
 			<section class="education">
-				<h2 class="heading-container"><span class="symbol">.</span><span class="heading">Education</span>
+				<h2 class="heading-container"><span class="symbol">.</span><span class="heading">Educação</span>
 				</h2>
 				<ul>
 					<!-- Mindera School -->
@@ -310,8 +333,8 @@
 
 							<li>
 								<span class="symbol-alternative">-</span>
-								<span>Boosted my professional development as a full stack
-									developer</span><span class="symbol">;</span>
+								<span>Impulsionou o meu desenvolvimento profissional como programador full
+									stack</span><span class="symbol">;</span>
 							</li>
 						</ul>
 					</li>
@@ -319,7 +342,7 @@
 					<!-- ESAG -->
 					<li>
 						<p class="experience-title">
-							<span class="title">IT Management Technician</span>
+							<span class="title">Técnico de Informática de Gestão</span>
 							-
 							<span class="institution">ESAG</span>
 							-
@@ -330,18 +353,18 @@
 							<li>
 								<p class="skills">
 									<span class="symbol-alternative">-</span>
-									Economics/Management<span class="symbol">;</span>
+									Economia/Gestão<span class="symbol">;</span>
 									Pascal/Lazarus<span class="symbol">;</span>
 									Visual Basic<span class="symbol">;</span>
 									Python<span class="symbol">;</span>
-									General IT Tools<span class="symbol">;</span>
+									Ferramentas gerais TI<span class="symbol">;</span>
 								</p>
 							</li>
 
 							<li>
 								<span class="symbol-alternative">-</span>
-								<span>First contact with programming and business
-									management</span><span class="symbol">;</span>
+								<span>Inicio do contacto com a programação e a gestão de empresas</span><span
+									class="symbol">;</span>
 							</li>
 						</ul>
 
