@@ -8,7 +8,8 @@
     "ci:all": "concurrently \"npm run ci:game\"",
     "-ci-": "echo 'c instal'",
     "start:game": "cd game && npm start",
-    "start": "concurrently \"npm run start:game\"",
+    "start:pdf": "live-server --port=8080 --open=./pdf --watch=./pdf",
+    "start": "concurrently \"npm run start:game\" \"npm run start:pdf\"",
     "-start-": "echo 'start'",
     "build:game": "cd game && npm run build",
     "build": "concurrently \"npm run build:game\"",
@@ -18,9 +19,8 @@
   },
   "dependencies": {
     "concurrently": "^9.2.1",
-    "css-free-style": "^1.3.0",
     "fs-extra": "^11.3.2",
-    "np": "^10.2.0",
-    "utilidades": "^1.4.1"
+    "live-server": "^1.2.2",
+    "np": "^10.2.0"
   }
 }
