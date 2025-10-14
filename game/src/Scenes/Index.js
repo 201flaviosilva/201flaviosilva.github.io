@@ -1,5 +1,3 @@
-import { DOM } from "201flaviosilva-utils";
-
 import StarsBackground from "../Components/StarsBackground";
 import GlobalConfigs from "../Configs";
 import { TextStyle } from "../Theme";
@@ -34,7 +32,7 @@ export default class Index extends Phaser.Scene {
 			text: "Start",
 			action: () => {
 				this.isMobile ?
-					this.pushNotification("Sorry, the current version of the game do not work on mobile :/") :
+					alert("Sorry, the current version of the game do not work on mobile :/") :
 					this.scene.start("Start");
 			},
 		});
@@ -66,21 +64,21 @@ export default class Index extends Phaser.Scene {
 	}
 
 	pushNotification(text) {
-		DOM.notification({
-			text,
-			animated: true,
-			animationTime: 5,
-			closeButton: true,
-			endPosition: 100,
-			style: {
-				border: "1px solid #00dd00",
-				boxShadow: "0 0 10px #058005, 0 0 50px #058005",
-				background: "#023b02",
-			},
-			textStyle: {
-				color: "#ff0000",
-				boxShadow: "0 0 10px #023b02, 0 0 50px #023b02",
-			},
-		});
+		// DOM.notification({
+		// 	text,
+		// 	animated: true,
+		// 	animationTime: 5,
+		// 	closeButton: true,
+		// 	endPosition: 100,
+		// 	style: {
+		// 		border: "1px solid #00dd00",
+		// 		boxShadow: "0 0 10px #058005, 0 0 50px #058005",
+		// 		background: "#023b02",
+		// 	},
+		// 	textStyle: {
+		// 		color: "#ff0000",
+		// 		boxShadow: "0 0 10px #023b02, 0 0 50px #023b02",
+		// 	},
+		// });
 	}
 }
