@@ -22,7 +22,7 @@
     "utilidades": "^1.4.1"
   },
   "devDependencies": {
-    "vite": "^5.4.20"
+    "vite": "^7.1.10"
   },
   "keywords": [],
   "repository": {
