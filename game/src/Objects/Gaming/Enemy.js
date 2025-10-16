@@ -1,5 +1,7 @@
-import { arrayChoice } from "201flaviosilva-utils";
+import { Arrays } from "utilidades";
 import GlobalConfigs from "../../Configs";
+
+const { choice } = Arrays;
 
 export class Enemy extends Phaser.Physics.Arcade.Sprite {
 	constructor(scene, x, y, sprite) {
@@ -24,7 +26,7 @@ export default class EnemyGroup extends Phaser.Physics.Arcade.Group {
 	generateAllEnemies() {
 		for (let i = 0; i < 5; i++) { // Number of lines
 			for (let j = 0; j < 20; j++) { // Number os columns
-				const sprite = arrayChoice(GlobalConfigs.gamingSprites);
+				const sprite = choice(GlobalConfigs.gamingSprites);
 				this.getNewEnemy(j * 50 + 100 + i * 2, i * 50 + 20, sprite);
 			}
 		}

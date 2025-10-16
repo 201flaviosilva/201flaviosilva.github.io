@@ -1,7 +1,7 @@
-import { randomInt } from "201flaviosilva-utils";
+import { randomNumber } from "utilidades";
 
-import EventSystem, { EVENTS_NAMES } from "./EventSystem";
 import { TextStyle } from "../../Theme";
+import EventSystem, { EVENTS_NAMES } from "./EventSystem";
 
 export default class UpdateScoreLabel extends Phaser.GameObjects.Text {
 	constructor(scene, x = 10, y = 10, score = 0, spriteKey = "JS", style = TextStyle.snake.updateScoreLabel) {
@@ -22,7 +22,7 @@ export default class UpdateScoreLabel extends Phaser.GameObjects.Text {
 			scale: { start: 1, end: 0 },
 			alpha: { start: 1, end: 0 },
 			angle: { start: 0, end: 360, steps: 64 },
-			rotate: { start: randomInt(-360, 360), end: randomInt(-360, 360) },
+			rotate: { start: randomNumber(-360, 360), end: randomNumber(-360, 360) },
 			speed: { min: 500, max: 750 },
 			lifespan: { min: 750, max: 1000 },
 		});

@@ -7,61 +7,108 @@ import Tutorial from "../Components/Tutorial";
 import Player from "../Objects/Home/Player";
 
 export default class Start extends Phaser.Scene {
-	constructor() {
-		super({ key: "Start", });
-	}
+  constructor() {
+    super({ key: "Start" });
+  }
 
-	create() {
-		const { width, height, middleWidth, middleHeight } = GlobalConfigs.screen;
-		this.input.keyboard.removeAllListeners();
+  init() {
+    const { android, iOS, iPad, iPhone, windowsPhone } =
+      this.sys.game.device.os;
+    this.isMobile = android || iOS || iPad || iPhone || windowsPhone;
 
-		// Background
-		const background = new StarsBackground(this);
+    if (this.isMobile)
+      this.pushNotification(
+        "This game is currently not available on mobile devices."
+      );
+  }
 
-		// Title
-		const title = new AnimateTitle(this, middleWidth, 100, "201flaviosilva");
+  create() {
+    const { width, height, middleWidth, middleHeight } = GlobalConfigs.screen;
+    this.input.keyboard.removeAllListeners();
 
-		const playersGroup = this.physics.add.group({
-			classType: Player,
-			runChildUpdate: true,
-			collideWorldBounds: true,
-		});
-		this.player = playersGroup.get(middleWidth, middleHeight);
+    // Background
+    const background = new StarsBackground(this);
 
-		{ // Settings
-			const settings = this.physics.add.image(10, 10, "Settings", 1).setOrigin(0);
-			this.physics.add.collider(this.player, settings, () => { this.scene.start("Options"); });
-		}
+    // Title
+    const title = new AnimateTitle(this, middleWidth, 100, "201flaviosilva");
 
-		{ // Pascal/Lazarus
-			const pascal = this.physics.add.image(middleWidth - 350, middleHeight - 100, "PascalZim").setScale(2);
-			this.physics.add.collider(this.player, pascal, () => { this.scene.start("Pascal"); });
-		}
+    const playersGroup = this.physics.add.group({
+      classType: Player,
+      runChildUpdate: true,
+      collideWorldBounds: true,
+    });
+    this.player = playersGroup.get(middleWidth, middleHeight);
 
-		{ // Web
-			const web = this.physics.add.image(middleWidth - 350, middleHeight + 100, "Web").setScale(4);
-			this.physics.add.collider(this.player, web, () => { this.scene.start("Web"); });
-		}
+    {
+      // Settings
+      const settings = this.physics.add
+        .image(10, 10, "Settings", 1)
+        .setOrigin(0);
+      this.physics.add.collider(this.player, settings, () => {
+        this.scene.start("Options");
+      });
+    }
 
-		{ // Snake All
-			const scale = 3;
-			this.snakeAll = this.add.tileSprite(middleWidth + 350, middleHeight - 100, 64, 32, "LangsSheet").setScale(scale);
-			const t = this.add.zone(middleWidth + 350, middleHeight - 100, 64 * scale, 32 * scale);
-			this.physics.world.enable(t);
-			this.physics.add.collider(this.player, t, () => { this.scene.start("SnakeAll"); });
-		}
+    {
+      // Pascal/Lazarus
+      const pascal = this.physics.add
+        .image(middleWidth - 350, middleHeight - 100, "PascalZim")
+        .setScale(2);
+      this.physics.add.collider(this.player, pascal, () => {
+        this.scene.start("Pascal");
+      });
+    }
 
-		{ // Gaming
-			const gaming = this.physics.add.image(middleWidth + 350, middleHeight + 100, "Comando").setScale(6);
-			this.physics.add.collider(this.player, gaming, () => { this.scene.start("Gaming"); });
-		}
+    {
+      // Web
+      const web = this.physics.add
+        .image(middleWidth - 350, middleHeight + 100, "Web")
+        .setScale(4);
+      this.physics.add.collider(this.player, web, () => {
+        this.scene.start("Web");
+      });
+    }
 
-		{ // Tutorial
-			const tutorial = new Tutorial(this, middleWidth - 75, height - 120, "Start").setScale(0.5);
-		}
-	}
+    {
+      // Snake All
+      const scale = 3;
+      this.snakeAll = this.add
+        .tileSprite(middleWidth + 350, middleHeight - 100, 64, 32, "LangsSheet")
+        .setScale(scale);
+      const t = this.add.zone(
+        middleWidth + 350,
+        middleHeight - 100,
+        64 * scale,
+        32 * scale
+      );
+      this.physics.world.enable(t);
+      this.physics.add.collider(this.player, t, () => {
+        this.scene.start("SnakeAll");
+      });
+    }
 
-	update(time, delta) {
-		this.snakeAll.tilePositionX += 0.025 * delta;
-	}
+    {
+      // Gaming
+      const gaming = this.physics.add
+        .image(middleWidth + 350, middleHeight + 100, "Comando")
+        .setScale(6);
+      this.physics.add.collider(this.player, gaming, () => {
+        this.scene.start("Gaming");
+      });
+    }
+
+    {
+      // Tutorial
+      const tutorial = new Tutorial(
+        this,
+        middleWidth - 75,
+        height - 120,
+        "Start"
+      ).setScale(0.5);
+    }
+  }
+
+  update(time, delta) {
+    this.snakeAll.tilePositionX += 0.025 * delta;
+  }
 }
