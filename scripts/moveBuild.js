@@ -2,7 +2,7 @@ import fs from "fs-extra";
 import path from "path";
 
 const OUTPUT = "dist";
-const OUTPUT_PROJECTS = "_";
+const OUTPUT_PROJECTS = "s";
 const PROJECTS = [{ path: "game", build: "dist" }];
 
 clear();

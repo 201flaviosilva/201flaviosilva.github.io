@@ -7,7 +7,7 @@ This site is my digital CV — a place where I show my experience as a developer
 I'm Flavio Silva — a Front-End developer passionate about creating games and building websites.
 
 🔗 **Live Site:** [201flaviosilva.github.io](https://201flaviosilva.github.io)
-🎮 **Play a Game:** [Interactive CV](https://201flaviosilva.github.io/_/game)
+🎮 **Play a Game:** [Interactive CV](https://201flaviosilva.github.io/s/game)
 📄 **Learn more:** [Check the Wiki](https://github.com/201flaviosilva/201flaviosilva.github.io/wiki)
 
 ---
@@ -49,6 +49,8 @@ I'm Flavio Silva — a Front-End developer passionate about creating games and b
 
 ```bash
 git clone https://github.com/201flaviosilva/201flaviosilva.github.io.git
+cd 201flaviosilva.github.io
+nvm use
 npm i
 npm run i:all
 npm start
