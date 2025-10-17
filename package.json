@@ -14,13 +14,11 @@
     "build:game": "cd game && npm run build",
     "build": "concurrently \"npm run build:game\"",
     "-build-": "echo 'build'",
-    "copy-build": "node scripts/moveBuild.js",
-    "bump": "npm run build:all && npm run copy-build && np --any-branch --no-tests --no-publish --no-yarn"
+    "copy-build": "node scripts/moveBuild.js"
   },
   "dependencies": {
     "concurrently": "^9.2.1",
     "fs-extra": "^11.3.2",
-    "live-server": "^1.2.2",
-    "np": "^10.2.0"
+    "live-server": "^1.2.2"
   }
 }
