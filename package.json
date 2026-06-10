@@ -17,7 +17,7 @@
     "copy-build": "node scripts/moveBuild.js"
   },
   "dependencies": {
-    "concurrently": "^9.2.1",
+    "concurrently": "^10.0.3",
     "fs-extra": "^11.3.2",
     "live-server": "^1.2.2"
   }
